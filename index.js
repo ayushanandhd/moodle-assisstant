@@ -2,16 +2,14 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import express from "express"
 import bodyParser from "body-parser"
 import clipboardy from "clipboardy"
-import ejs from "ejs"
 
 
 const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine', 'ejs');
-app.set('views', './views');
 
 // initialising gemini API
-const API = process.env.API_KEY
+const API = "AIzaSyC4Ax0XM5_-HDS0hwws73V7idfyT4Et4wk"
 const genAI = new GoogleGenerativeAI(API);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
@@ -68,4 +66,3 @@ app.post('/submit', (req,res)=>{
 })
 
 app.listen(3000)
-export default app;
