@@ -1,8 +1,8 @@
 # Moodle Quiz Assisstant 🧠
-
 ## How to use?
-1. visit https://ayushanandhd.github.io/moodlehelp
-2. Copy all the questions from the moodle quiz webpage
-3. paste it into the textbox and click on 'copy script" button
-4. open console from the developer options on the Moodle Quiz Pagwe
-5. paste the script in the console and press enter.
+1. Clone this repo and type your gemini API in the 12th line of index.js file
+2. use this command in the terminal 👇🏻
+   ```node index.js```
+3. go to localhost:3000 in your browser
+4. copy all the questions from the moodle quiz page and paste it in the website and click on "copy script"
+5. now open the moodle quiz page and open console and run the script
