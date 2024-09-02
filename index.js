@@ -8,7 +8,7 @@ import ejs from "ejs"
 const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', './views');
 
 // initialising gemini API
 const API = process.env.API_KEY
