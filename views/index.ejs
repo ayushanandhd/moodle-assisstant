@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Quiz Assisstant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"], textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .copy-button{
+            padding: 10px 20px;
+            /* margin: 5px; */
+        }
+        .copy-button:hover{
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #f9f9f9;
+            max-width: 100%;
+        }
+        .footer{
+            margin-top: 30vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1> Moodle Quiz Assisstant 🧠 </h1></center>
+        <!-- Input box for questions -->
+         <form action="/submit" method="post">
+        <textarea name="questions" id="questionsInput" rows="4" placeholder="Paste your questions here"></textarea>
+        <input id="copyScriptButton" class="copy-button" type="submit" value="Copy Script">
+    </form>
+        <!-- <button id="copyScriptButton">Copy Script</button> -->
 
+ 
+    </div>
+    <div class="container footer">
+        Made with ❤️ by <a target="_blank" href="https://www.instagram.com/ayushanandhd">ayush</a>
+    </div>
+    
+</body>
+</html>
