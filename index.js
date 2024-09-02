@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine', 'ejs');
 
 // initialising gemini API
-const API = ""
+const API = process.env.API_KEY
 const genAI = new GoogleGenerativeAI(API);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
